@@ -1,0 +1,151 @@
+/* 
+    Document   : profile
+    Created on : Feb 15, 2013, 1:12:14 PM
+    Author     : user
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body{
+    background-image: url("images/strange_bullseyes.png");
+    font-size:  large;
+    margin:	  0px;
+    
+}
+
+a{
+    color:  #BBBBBB;
+    
+}
+
+header{
+    background-color: #2D2D2D;
+    padding-bottom: 7px;
+    padding-left: 3%;
+    padding-top: 2px;
+    
+}
+
+#profile{
+    color:              #FFFFFF ;
+    height:             90%;
+    width:             40%;
+    background-color:   #1077C1;
+    position:           relative;
+    text-align:           left;    
+    margin-left:	  32%;
+    margin-top:           2%;
+    border-radius:        3%;
+    padding-left:         2%;
+    padding-top:          2%;
+    box-shadow: 5px 12px 20px #4E4E4E, 0 0 47px gainsboro;
+
+}
+
+#person, #player{
+    background-color:   #F9F9F9;
+    color:              #0084B4;
+    width:              45%;
+    border-radius:      7%;
+    padding-top:        1%;
+    padding-left:       2%;
+    padding-bottom:     4%;
+    float:left;
+    box-shadow: 5px 12px 20px #4E4E4E, 0 0 47px dodgerblue;
+}
+
+#player{
+    
+    margin-top:     5%;
+}
+
+#picture{
+    width:          150px;
+    height:         150px;
+    background-color:   #F9F9F9;
+    color:              #0084B4;
+    border-radius:      7%;
+    padding-top:        1%;
+    padding-left:       2%;
+    padding-bottom:     1%;
+    margin-right:       7%;    
+    float:left;
+    box-shadow: 5px 12px 20px #4E4E4E, 0 0 47px dodgerblue;
+}
+
+#bookings{
+	margin-top:30%;
+	width:50%;
+	padding-bottom:	4%;
+}
+.classname {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}.classname:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.classname:active {
+	position:relative;
+	top:1px;
+}
+
+@media only screen and (max-width: 1000px) {
+	#profile{
+		width:	60%;
+		margin-left:20%;
+	}
+}
+
+@media only screen and (max-width: 770px) {
+	#profile{
+		width:	70%;
+		margin-left:10%;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	#profile{
+		width:	79%;
+		margin-left:5%%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	#profile{
+		width:	90%;
+		margin-left:0%;
+	}
+
+	#person, #player{
+		width:	90%;
+		margin-top:	3%;
+	}
+
+	#bookings{
+		margin-top:50%;
+	}
+
+}
+
+
+
+

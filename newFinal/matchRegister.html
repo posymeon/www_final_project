@@ -1,0 +1,119 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Match Registration</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="matchRegister.css">
+	<link rel="icon" href="http://83.212.100.171:9090/newFinal/images/favicon.ico" type="image/ico" />
+
+<script language="javascript">
+    
+    function validate(matchregistration){
+        
+        if(matchregistration.location.value.length==0){
+                alert("Please enter a location");
+                matchregistration.location.focus();
+                return false;
+        
+        }
+        if(matchregistration.field.value.length==0){
+            alert("Please enter a field");
+            matchregistration.location.focus();
+            return false;
+        }
+        if(matchregistration.date.value.length==0){
+            alert("Please enter a date");
+            matchregistration.date.focus();
+            return false;
+        }
+        if(matchregistration.time.value.length==0){
+            alert("Please enter a time");
+            matchregistration.time.focus();
+            return false;
+        }
+	         var x =matchregistration.date.value;
+                var time =matchregistration.time.value;
+                var year=x[0]+ x[1]+ x[2]+ x[3];
+                var month=x[5]+x[6];
+                var day = x[8]+x[9];
+
+                var today = new Date();
+                var currTime =  today.getTime(); 
+                var bookingDate = new Date();
+                bookingDate.setDate(bookingDate.getDate()+6);
+
+                var datex=new Date();
+                datex.setFullYear(year,month-1,day);
+
+               
+                if(datex<today)
+                {
+                    alert("You selected a date that has passed!");
+                    return false;
+                }
+                
+                if(datex>(bookingDate)){
+                    alert("The date you selected is larger than the allowed booking date!");
+                    return false;
+                }
+	        
+    }
+</script>
+    </head>
+    <body>
+        <div id="head"><h1>Match Registration</h1>
+        </div>
+        <div id="content">
+            <form  method="post" name="matchregistration" action="matchRegister" onSubmit="return validate(this)">
+                <table width="474" border="0" cellpadding="5" cellspacing="5">
+                    <tr>
+                        <td >Πόλη</td>
+                        <td >*&nbsp;
+                                <select name="location" id="location">
+                                    <option name="location" id="location" value="Volos">Volos</option>
+                                </select>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td >Γήπεδο</td>
+                        <td >*&nbsp;
+                            <select name="field" id="field">
+                                    <option name="field" id="field" value="Fytoko">Fytoko</option>
+                                    <option name="field" id="field" value="Magnisiakos">Magnisiakos</option>
+                                    <option name="field" id="field" value="Agia_paraskeui">Agia_paraskeui</option>
+                                    <option name="field" id="field" value="Fytoko_1">Fytoko_1</option>
+                                    <option name="field" id="field" value="Fytoko_2">Fytoko_2</option>
+                                    <option name="field" id="field" value="Fytoko_3">Fytoko_3</option>
+                                    <option name="field" id="field" value="Agia_Paraskeui_2">Agia_Paraskeui_2</option>
+                                    <option name="field" id="field" value="Agia_Paraskeui_1">Agia_Paraskeui_1</option>
+                                    <option name="field" id="field" value="Agia_Paraskeui_8x8_1">Agia_Paraskeui_8x8_1</option>
+                                    <option name="field" id="field" value="Agia_Paraskeui_8x8_2">Agia_Paraskeui_8x8_2</option>
+                                    <option name="field" id="field" value="Pedion_tou_Arews">Pedion_tou_Arews</option>
+                                    <option name="field" id="field" value="Karagats">Karagats</option>
+                                </select>
+                           </td>
+                    </tr>
+                    <tr>
+                        <td >Ημέρα(ηη-μμ-εεεε)</td>
+                        <td >*&nbsp;
+                            <input name="date" id="date" type="date" /></td>
+                    </tr>
+                    <tr>
+                        <td >Ώρα(ωω)</td>
+                        <td >*&nbsp;
+                            <input name="time" id="time" type="number" step="1" min="18" max="23"/>:00</td>
+                    </tr>
+                    
+                </table>
+                <p id="button">
+<input name="submit" type="submit" value="matchRegister" />&nbsp;&nbsp;
+<input name="reset" type="reset" value="Reset Form" /></p>
+            </form>
+        </div>
+    </body>
+	
+</html>

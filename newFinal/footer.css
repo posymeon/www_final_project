@@ -1,0 +1,20 @@
+/* 
+    Document   : footer
+    Created on : Feb 18, 2013, 1:30:39 AM
+    Author     : user
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#footer{
+    background-color:   #404D59;
+    width:100%;
+    height:6%;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+    bottom:0;
+    left:0;
+    position: fixed;
+    padding-left:	1%;
+    color:	#FFFFFF;
+}

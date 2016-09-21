@@ -1,0 +1,23 @@
+/* 
+    Document   : index
+    Created on : Feb 16, 2013, 9:17:13 PM
+    Author     : user
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#insert{
+    color: #FFFFFF ;
+    height: auto;
+    width: 25%;
+    background-color: #1077C1;
+    
+    text-align: left;    
+    margin-left:	  33%;
+    margin-top:           12%;
+    border-radius:        3%;
+    padding-left:         5%;
+    padding-top:          2%;
+    padding-bottom:       2%;  
+    box-shadow: 5px 12px 20px #4E4E4E, 0 0 47px gainsboro;
+}   

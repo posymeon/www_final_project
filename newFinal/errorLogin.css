@@ -1,0 +1,29 @@
+/* 
+    Document   : errorLogin
+    Created on : Feb 18, 2013, 5:08:40 AM
+    Author     : user
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body{
+	margin:	0px;
+	background-image:	url(images/foto.jpg);
+}
+
+h1{
+	color:	#FFFFFF;
+	padding-left:41%;
+	padding-top:	2%;
+}
+
+@media only screen and (max-width: 1000px){
+	h1{
+	
+	padding-left:2%;
+	
+}
+
+}
+
+

@@ -1,0 +1,88 @@
+body {
+    background-image: url("images/escheresque.png");
+    background-repeat:repeat;
+    margin:	0px;
+}
+
+h1{
+	color:	#2C8A58;
+	margin-left:	1%;
+}
+
+#contents table tr td select {
+    float: none;
+    position: relative;
+}
+#contents form #button {
+    text-align: right;
+    position: relative;
+}
+#contents form #button input {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+#content{
+ background-color: #1077C1;
+    border-radius: 15px;
+    box-shadow: 5px 12px 20px #4E4E4E, 0 0 47px gainsboro;
+    color: #FFFFFF;
+    height: auto;
+    margin-left: 25%;
+    margin-top: 2%;
+    padding-bottom: 6%;
+    padding-left: 13%;
+    padding-top: 5%;
+    position: relative;
+    text-align: left;
+    width: 40%;
+}
+
+
+
+@media only screen and (max-width: 1500px) {
+    #content{
+        width:50%;
+        margin-left: 20%;
+	 padding-left: 10%;
+            
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #content{
+        width:57%;
+        margin-left: 14%;
+	 padding-left: 7%;
+            
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #content{
+        width:65%;
+        margin-left: 7%;
+	 padding-left: 4%; 
+            
+    }
+}
+
+
+@media only screen and (max-width: 780px) {
+    #content{
+        width:70%;
+        margin-left: 6%; 
+            
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+    #content{
+        width:100%;
+        margin-left: 0%; 
+            
+    }
+
+}

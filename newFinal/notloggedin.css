@@ -1,0 +1,114 @@
+/* 
+    Document   : notloggedin
+    Created on : Feb 17, 2013, 8:19:56 PM
+    Author     : user
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#header{
+   /* IE10 Consumer Preview */ 
+background-image: -ms-radial-gradient(right bottom, ellipse closest-side, #5A5D5F 0%, #2D2D2D 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-radial-gradient(right bottom, ellipse closest-side, #5A5D5F 0%, #2D2D2D 100%);
+
+/* Opera */ 
+background-image: -o-radial-gradient(right bottom, ellipse closest-side, #5A5D5F 0%, #2D2D2D 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(radial, right bottom, 0, right bottom, 0, color-stop(0, #5A5D5F), color-stop(1, #2D2D2D));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-radial-gradient(right bottom, ellipse closest-side, #5A5D5F 0%, #2D2D2D 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: radial-gradient(ellipse closest-side at right bottom, #5A5D5F 0%, #2D2D2D 100%);
+    
+    
+}
+
+#egipedo{
+     margin-left: 22%;
+    margin-top: -0.5%;
+    width: auto;
+}
+
+#insert{
+    width:  48%;
+    float:  right;
+    padding-top: 0.4%;
+    
+    
+}
+
+#register{
+    float:  right;
+    width:40%;
+    
+}
+
+#login{
+    float:left;
+    width:50%;
+}
+#button{
+
+}
+
+@media only screen and (max-width: 1200px) {    
+    #egipedo{
+       
+        width:auto;
+        margin-top: -0.5%;
+        margin-left:    14%;
+    }
+    #insert{
+        width: 62%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #egipedo{
+    width:auto;
+        margin-top: -0.5%;
+        margin-left:    14%;
+    }
+    #insert{
+        width: 76%;
+    }
+    
+    #login,#register{
+        display: block;
+    }
+    
+
+}
+@media only screen and (max-width: 770px) {
+    #register{
+        float: none;
+    }
+}
+@media only screen and (max-width: 570px) {
+    #insert{
+        float: none;
+    }
+    #egipedo,#login,#register{
+        display: block;
+        float:  none;
+    }
+	
+}
+@media only screen and (max-width: 480px) {
+    blody{
+        
+        
+    }
+    #login,#register{
+        width:  100%;
+        display: block;
+        
+    }
+    
+    
+}
